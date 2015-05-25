@@ -217,6 +217,5 @@ hist(edad,col = "red")
 # Utilice la función boxplot()
 
 library(ggplot2)
-boxplot(edad,colour="green")
-g <- ggplot(data = data, aes(x=data[[]], y=Ingreso, fill=Region))
-g + geom_boxplot() 
+edad <- data[,1]
+boxplot(edad,col="green")
